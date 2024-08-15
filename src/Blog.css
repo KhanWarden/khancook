@@ -1,0 +1,16 @@
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  .categories img {
+    margin-right: 20px;
+    margin-top: 100px;
+  }
+  
+  .categories a {
+    color: black;
+    text-decoration: none;
+  }

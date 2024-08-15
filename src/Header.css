@@ -1,0 +1,44 @@
+.nav-link {
+    position: relative;
+    transition: all 0.3s;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.nav-link:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: orange;
+    color: white; 
+    padding: 5px 15px; 
+    border-radius: 15px; 
+    margin: 0 5px; 
+    position: relative; 
+}
+ 
+.navbar-nav .nav-link.active::before {
+    width: 0;
+    transition: none; 
+  }
+.fill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: #ff0000;
+    transition: all 0.5s ease-in-out;
+}
